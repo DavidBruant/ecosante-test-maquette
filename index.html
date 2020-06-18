@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Écosanté</title>
+
+    <link crossorigin="anonymous" rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/twbs/bootstrap@v4/dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://d3js.org/d3-fetch.v1.min.js" defer></script>
+    <script>
+        if(location.hash === ''){
+            location.hash = '#welcome'
+        }
+
+    </script>
+</head>
+
+<body>
+<main>
+    <section class="screen" id="welcome">
+        <h1>Bonjour, bienvenue dans Écosanté</h1>
+        <h2>Je sais me protéger moi et celleux que j'aime des impacts de la qualité de l'air</h2>
+
+        <a href="#question-1" class="btn">Je veux des recommandations !</a>
+    </section>
+
+    <section class="screen" id="question-1">
+        <h1>Personnaliser Écosanté</h1>
+
+        <p>Des petites questions pour personnaliser les conseils à votre contexte</p>
+        <p>(vos données restent dans votre téléphone/ordinateur, nous n'y avons jamais accès)</p>
+
+        <p>Est-ce que vous voulez des recommandations pour vous-même ou pour une autre personne ?<br>
+            <a class="btn" href="#question-2">Moi-même</a> 
+            <a class="btn" href="#question-2">Une autre personne</a> 
+        </p>
+        
+    </section>
+
+    <section class="screen" id="question-2">
+        <h1>Personnaliser Écosanté</h1>
+
+        <p>Des petites questions pour personnaliser les conseils à votre contexte</p>
+        <p>(vos données restent dans votre téléphone/ordinateur, nous n'y avons jamais accès)</p>
+
+        <p>Je respire l'air de <input placeholder="Paris, Guyane, Gironde, adresse précise, etc."> 
+            <a class="btn" href="#question-3">Ok</a> 
+        </p>
+        <p>ou <button class="btn">Me géolocaliser</button></p>
+
+        <p>Je ne veux pas répondre :</p>
+        
+        <a class="btn" href="#question-3">Une autre question</a><br>
+        <a class="btn" href="#recommandations">Aller directement aux recommandations</a>
+    </section>
+
+    <section class="screen" id="question-3">
+        <h1>Personnaliser Écosanté</h1>
+
+        <p>Des petites questions pour personnaliser les conseils à votre contexte</p>
+        <p>(vos données restent dans votre téléphone/ordinateur, nous n'y avons jamais accès)</p>
+
+        <p>J'ai une maladie respiratoire (asthme, allergie, BPCO, etc.) <br>
+            <a class="btn" href="#question-4">Oui</a>
+            <a class="btn" href="#question-4">Non</a>
+            <a class="btn" href="#question-4">Je ne sais pas</a>
+        </p>
+
+        <p>Je ne veux pas répondre :</p>
+        
+        <a class="btn" href="#question-4">Une autre question</a><br>
+        <a class="btn" href="#recommandations">Aller directement aux recommandations</a>
+    </section>
+
+    <section class="screen" id="question-4">
+        <h1>Personnaliser Écosanté</h1>
+
+        <p>Des petites questions pour personnaliser les conseils à votre contexte</p>
+        <p>(vos données restent dans votre téléphone/ordinateur, nous n'y avons jamais accès)</p>
+
+        <p>Mon âge : <br>
+            <input type="number" min="0" step="1" value="27">
+            <a class="btn" href="#recommandations">Ok</a> 
+        </p>
+
+        <p>Je ne veux pas répondre :</p>
+        
+        <a class="btn" href="#recommandations">Aller directement aux recommandations</a>
+    </section>
+
+    <section class="screen" id="recommandations">
+        <h1>Les recommandations Écosanté</h1>
+
+        <p>5 fruits et légumes par jour</p>
+        <p>Respirez par le nez</p>
+    </section>
+
+
+    
+
+</main>
+</body>
+
+</html>
