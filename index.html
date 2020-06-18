@@ -10,6 +10,9 @@
 
     <link crossorigin="anonymous" rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/twbs/bootstrap@v4/dist/css/bootstrap-reboot.css">
+    <link crossorigin="anonymous" rel="stylesheet"
+        href="./fontawesome/css/all.css">
+
     <link rel="stylesheet" href="./style.css">
 
     <script src="https://d3js.org/d3-fetch.v1.min.js" defer></script>
@@ -17,7 +20,6 @@
         if(location.hash === ''){
             location.hash = '#welcome'
         }
-
     </script>
 </head>
 
@@ -85,7 +87,7 @@
         <p>(vos données restent dans votre téléphone/ordinateur, nous n'y avons jamais accès)</p>
 
         <p>Mon âge : <br>
-            <input type="number" min="0" step="1" value="27">
+            <input type="number" min="0" step="1" placeholder="exemple: 27">
             <a class="btn" href="#recommandations">Ok</a> 
         </p>
 
@@ -97,8 +99,62 @@
     <section class="screen" id="recommandations">
         <h1>Les recommandations Écosanté</h1>
 
-        <p>5 fruits et légumes par jour</p>
-        <p>Respirez par le nez</p>
+        <section class="recommandations">
+            <h2>Recommandations personnalisées</h2>
+            <ol>
+                <li>
+                    <span class="picto">
+                        <span class="fas fa-running"></span>
+                    </span>
+                    <strong>Activité physique</strong>
+                    <p>Aller courir <u>20 minutes</u> au <u>parc de vincennes</u> est ptèt une bonne idée</p>
+                </li>
+                <li>
+                    <span class="picto">
+                        <span class="fas fa-house"></span>
+                    </span>
+                    <strong>Aérer</strong>
+                    <p>Ne pas aérer aujourd'hui</p>
+                </li>
+                <li>
+                    <span class="picto">
+                        <span class="fas fa-running"></span>
+                    </span>
+                    <strong>Activité sportive</strong>
+                    <p>Aller courir <u>20 minutes</u> au <u>parc de vincennes</u> est ptèt une bonne idée</p>
+                </li>
+                <li>
+                    <span class="picto">
+                        <span class="fas fa-running"></span>
+                    </span>
+                    <strong>Activité sportive</strong>
+                    <p>Aller courir <u>20 minutes</u> au <u>parc de vincennes</u> est ptèt une bonne idée</p>
+                </li>
+                <li>
+                    <span class="picto">
+                        <span class="fas fa-running"></span>
+                    </span>
+                    <strong>Activité sportive</strong>
+                    <p>Aller courir <u>20 minutes</u> au <u>parc de vincennes</u> est ptèt une bonne idée</p>
+                </li>
+
+
+            </ol>
+
+        </section>
+
+        <section class="context">
+            <h2>Mon contexte</h2>
+            <ul>
+                <li>J'habite à <code>Bordeaux</code></li>
+                <li>Je n'ai pas de maladie respiratoire</li>
+                <li>J'ai <code>41</code> ans</li>
+            </ul>
+
+            <h3>Autres questions</h3>
+            <p>...</p>
+        </section>
+
     </section>
 
 
